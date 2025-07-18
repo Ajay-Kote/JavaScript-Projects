@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+
+</head>
+<body>
+    <nav class="navbar fixed-top bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div><i class="fa-brands fa-spotify"></i></div>
+            <div><i class="fa-solid fa-house"></i></div>
+            <div class="navbar-nav">
+                <div>
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><img src="/images/search.svg" alt=""></span>
+                            </div>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        </div>
+                    </form>
+                </div>
+                </div>
+        </div>
+    </nav>
+    <!-- <header class="header">
+                <div class="left-header">
+                <img src="images/spotify-logo.png" alt="spotify logo" class="logo">
+                <img src="images/home.png" alt="homeicon" class="home">
+                <div class="sc">
+                    <img src="images/search.png" alt="search icon" class="search-icon">
+                    <input type="text" placeholder="What do you want to play?" class="search-bar">
+                </div>
+                </div>
+            
+                <div class="right-header">
+                <button class="pre-btn">Explore Premium</button>
+                <div class="install">
+                    <img src="images/downloading.png" alt="install" class="download" >
+                    <span><a href="https://open.spotify.com/download">Install App</a></span>
+                </div>
+                <img src="images/bel.png" alt="notification" class="bhel">
+                <img src="images/invite.png" alt="invite" class="fa">
+                <img src="images/profile.png" alt="account" class="profile">
+                </div>
+        
+    </header> -->
+    <div class="main-layout">
+        <div class="sidebar">
+            <div class="lib">
+                <div class="lib-top">
+                    <h4>Your Library</h4>
+                    <button class="create-btn">+ Create</button>
+                    </div>
+
+                    <div class="filters">
+                    <button class="filter-btn">Playlists</button>
+                    <button class="filter-btn">Artists</button>
+                    </div>
+
+                    <div class="lib-container">
+                        <div class="lib-item">
+                            <img src="images/Arijit.webp" alt="anime" class="lib-img">
+                            <p>Arijit Singh</p>
+                        </div>
+                        <div class="lib-item">
+                            <img src="images/songs/God.jpeg" alt="anime" class="lib-img">
+                            <p>Devotional songs</p>
+                        </div>
+                        <div class="lib-item">
+                            <img src="images/Anime.jpeg" alt="anime" class="lib-img">
+                            <p>Anime songs</p>
+                        </div>
+                        <div class="lib-item">
+                            <img src="images/Ajay.jpeg" alt="anime" class="lib-img">
+                            <p>Ajay playlist</p>
+                        </div>
+
+                    </div>
+                </div>    
+            
+        </div>
+
+            <main>
+            
+                <!-- Main content goes here -->
+                <div class="charts">
+                <h2>Devotional Songs</h2>
+                <div class="scroll-wrapper">
+                    <button class="scrool-left">&#8592;</button>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/songs/bhajaman-radhe.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-bhajman" data-img="images/songs/bhajaman-radhe.jpeg" data-title="Bhajman Radhe" data-artist="Krishna Bhajan · Devotional Vibes">▶</button>
+
+                        <h3 class="card-title">Bhajman Radhe</h3>
+                        <p class="card-desc">Krishna Bhajan · Devotional Vibes</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/namo-namo.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-namo" data-img="images/songs/namo-namo.jpeg" data-title="Namo Namo" data-artist="Amit Trivedi · Kedarnath">▶</button>
+                        <h3 class="card-title">Namo Namo</h3>
+                        <p class="card-desc">Amit Trivedi · Kedarnath</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/karpura-karam.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-karpura" data-img="images/songs/karpura-karam.jpeg" data-title="Karpura karam" data-artist="Traditional · Sanskrit Aarti">▶</button>
+                        <h3 class="card-title">Karpura karam</h3>
+                        <p class="card-desc">Traditional · Sanskrit Aarti</p>
+
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/mai-balak.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-maibalak" data-img="images/songs/mai-balak.jpeg" data-title="Mai Balak Tu Mata" data-artist="Anuradha Paudwal · Mata Bhajan">▶</button>
+                        <h3 class="card-title">Mai Balak Tu Mata</h3>
+                        <p class="card-desc">Anuradha Paudwal · Mata Bhajan</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/patanahi-kisrupa.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-patanahi" data-img="images/songs/patanahi-kisrupa.jpeg" data-title="Kisrup Mai Akar" data-artist="Devotional Bhajan · Spiritual Classics">▶</button>
+                        <h3 class="card-title">Kisrup Mai Akar</h3>
+                        <p class="card-desc">Devotional Bhajan · Spiritual Classics</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/ram-siya.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-siyaram" data-img="images/songs/ram-siya.jpeg" data-title="Ram Siya Ram" data-artist="Sachet Tandon · Ram Siya Ram">▶</button>
+
+                        <h3 class="card-title">Ram Siya Ram</h3>
+                        <p class="card-desc">Sachet Tandon · Ram Siya Ram</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/songs/atma-ram.jpeg" alt="Top Hits" class="card-img">
+                        <button class="play-btn" id="card-btn" data-music-id="music-atmaram" data-img="images/songs/atma-ram.jpeg" data-title="Atma Rama" data-artist="Sri Chaitanya · Bhakti Collection">▶</button>
+                        <h3 class="card-title">Atma Rama</h3>
+                       <p class="card-desc">Sri Chaitanya · Bhakti Collection</p>
+                    </div>
+                    
+                 
+                </div>
+                <button class="scrool-right">&#8594;</button>
+                </div>
+
+                <h2>Anime Songs</h2>
+                <div class="scroll-wrapper">
+                    <button class="scrool-left">&#8592;</button>
+                    <div class="card-container">
+                
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Anime.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    
+                 
+                </div>
+                <button class="scrool-right">&#8594;</button>
+                </div>
+
+
+                <h2>Ajay PlayList</h2>
+                <div class="scroll-wrapper">
+                    <button class="scrool-left">&#8592;</button>
+                    <div class="card-container">
+                
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/Ajay.jpeg" alt="Top Hits" class="card-img">
+                        <h3 class="card-title">Top Hits India</h3>
+                        <p class="card-desc">Here’s the devotional Hindi music India is listening to.</p>
+                    </div>
+                    
+                 
+                </div>
+                <button class="scrool-right">&#8594;</button>
+             </div>
+             </div>
+             <hr class="hr">
+    
+
+            </main>
+    </div>
+    <footer class="footer">
+        <div id="f1">
+            <p class="fotter-heading">company</p>
+            <p class="footer-link">About</p>
+            <p class="footer-link">Jobs</p>
+            <p class="footer-link">For the Record</p>
+        </div>
+        <div id="f2">
+            <p class="fotter-heading">Communities</p>
+            <p class="footer-link">For Artists</p>
+            <p class="footer-link">Developers</p>
+            <p class="footer-link">Advertising</p>
+            <p class="footer-link">Investors</p>
+            <p class="footer-link">Vendors</p>
+        </div>
+        <div id="f3">
+            <p class="fotter-heading">Useful links</p>
+            <p class="footer-link">Support</p>
+            <p class="footer-link">Free Mobile App</p>
+        </div>
+        <div id="f4">
+            <img src="images/instagram.png" alt="inta logo" class="insta">
+            <img src="images/twitter-sign.png" alt="twitter logo" class="twitter">
+            <img src="images/facebook.png" alt="fb logo" class="fb">
+        </div>
+    </footer>
+    <hr class="hr">
+        <div class="end">
+            <p>Legal</p>
+            <p>Safety & Privacy Center</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>About Ads</p>
+            <p>Accessibility</p>
+            
+        </div>
+        <h4 id="CR">© 2025 Spotify AB</h4>
+    <div class="music-player">
+        <div class="player-contaier">
+            <div class="song-info">
+                <div class="song-detials">
+                    <img src="images/songs/bhajaman-radhe.jpeg" alt="song" class="music-img">
+                    <div>
+                        <h3 class="song-title">Bhajman Radhe</h3>
+                        <p class="song-artist">Krishna Bhajan · Devotional Vibes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="main-play-btn">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="music-bhajman" src="music/bhajman-radhe.mp3"></audio>
+    <audio id="music-namo" src="music/namo-namo.mp3"></audio>
+    <!-- <audio id="music-karpura" src="music/namo-namo.mp3"></audio>
+    <audio id="music-maibalak" src="music/namo-namo.mp3"></audio>
+    <audio id="music-patanahi" src="music/namo-namo.mp3"></audio>
+    <audio id="music-siyaram" src="music/namo-namo.mp3"></audio>
+    <audio id="music-atmaram" src="music/namo-namo.mp3"></audio> -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

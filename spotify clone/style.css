@@ -1,0 +1,513 @@
+/* header section */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap:wrap; */
+    background-color: #121212;
+    padding: 10ps 20px;
+    row-gap:10px;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 100;
+
+}
+.left-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+
+
+
+.logo{
+    height: 40px;
+    background-color: white;
+    border-radius: 60%;
+    margin: 10px 20px;
+}
+.home{
+    height:40px;
+    width: 40px;
+    background-color:white;
+    
+    color: black;
+    border-radius: 50%;
+    margin:10px 20px;
+    display: flex;
+    justify-content: center;
+}
+.sc{
+    background-color: #121212;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;;
+    color: white;
+    gap: 10px;
+    width:300px;
+}
+.search-icon{
+    height:30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding:5px;
+}
+.search-bar{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size:14px;
+    width:100%;
+}
+.pre-btn{
+    background-color: white;
+    border: none;;
+    border-radius: 20px;
+    padding: 8px 16px;
+  font-weight: bold;
+    
+}
+.install{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+/* yeh dono chatgpt ne diya hai */
+.install span a {
+  color: white;
+  text-decoration: none;
+}
+.install span a:hover {
+  text-decoration: underline;
+  color: #1db954;
+  cursor: pointer;
+}
+.download{
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+}
+.bhel{
+    height:24px;
+    background-color: white;
+    border-radius: 50%;
+}
+.fa{
+    height:24px;
+    background-color: white;
+    border-radius: 50%;
+}
+.profile{
+    height: 40px;
+    width: 40px;
+    background-color: white;    
+    border-radius: 50%;
+}
+/* icon hover ke liya */
+.home:hover,
+.search-icon:hover,
+.sc:hover,
+.download:hover,
+.bhel:hover,
+.fa:hover,
+.profile:hover,
+.pre-btn:hover {
+    transform:scale(1.1);
+    transition: trasform 0.3s ease-in-out;
+    cursor: pointer;
+}   
+
+
+
+
+ /*mainnnnnnnnnnnn page wala css hai idar  */
+.main-layout{
+    display: flex;
+    /* flex-direction: column; */
+    height: 100vh;
+    background-color: #121212;
+    padding-top: 64px;
+    gap: 30px;
+}
+.slidebar{
+    height: 100vh;
+    width:240px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    overflow-y: auto ;
+    top: 0;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.lib{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.lib-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-btn {
+  background-color: #1ed760;
+  border: none;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.filter-btn {
+  background-color: #282828;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  background-color: #3e3e3e;
+}
+
+.lib-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+}
+.lib-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.lib-img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+main{
+    flex:1;
+    overflow-y: auto;
+    background-color: #121212;
+}
+.card-container{
+    display:flex;
+    gap:20px;
+    overflow-x: auto;
+    padding: 10px 0px;
+    /* gpt ne diya */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+/* gpt ne diya */
+.card-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.card{
+    width: 180px;
+    flex-shrink: 0;
+}
+.card {
+  position: relative;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #121212;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.play-btn {
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  background-color: #1db954;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+.card:hover .play-btn {
+  display: block;
+}
+
+.card-img{
+    width:100%;
+    height: 180px;
+    object-fit: cover;
+}
+.scroll-wrapper {
+    position: relative;
+}
+
+.scrool-left,
+.scrool-right {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: #121212;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scrool-left {
+    left: 0;
+}
+
+.scrool-right {
+    right: 0;
+}
+.scrool-left:hover,
+.scrool-right:hover{
+    background-color: #1db954;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer hai bhai idar bass aur kuch nahi */
+.hr{
+  border: none;
+  height: 1px;
+  background-color: #282828;
+  margin: 40px 0;
+}
+
+footer{
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.footer {
+    display: flex;
+  justify-content: space-between; /* spreads them out */
+  background-color: #121212;
+  color: white;
+  padding: 40px 60px;
+}
+.fotter-heading{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-link{
+    font-weight: 400;
+    color: rgb(113, 111, 111);
+    font-size: 13px;
+    margin: 6px 0;
+
+}
+.footer-link:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#f4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.insta{
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+.twitter{
+    height: 30px;
+    background-color: white;
+    border-radius: 60%;
+    margin: 10px 20px;
+}
+.fb{
+    height: 30px;
+    background-color: white;
+    border-radius: 60%;
+    margin: 10px 20px;
+}
+.end{
+    display:flex;
+    justify-content: left;
+    padding: 20px;
+    background-color: #121212;
+    color: white;   
+    font-size: 14px;
+    font-weight: 400;   
+    gap: 10px;
+}
+.insta:hover,
+.twitter:hover,
+.fb:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#CR{
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    background-color: #121212;
+}
+.footer-link,
+.pre-btn,
+.install span a,
+.profile,
+.bhel,
+.fa {
+  cursor: pointer;
+}
+
+
+
+
+/* scroolll related gpt ne diya */
+/* For Chrome, Safari and Edge */
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+main {
+    scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* For IE and old Edge */
+main {
+    -ms-overflow-style: none;
+}
+
+
+/* music player */
+
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; 
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 100;
+}
+.player-contaier{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;   
+    padding: 0 20px;
+}
+.music-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.song-detials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.song-title {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.song-artist {
+    font-size: 13px;
+    margin: 0;
+    color: #ccc;
+}
+
+.song-info {
+    flex: 1; /* Take full remaining space, but not push the button */
+}
+
+#main-play-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
